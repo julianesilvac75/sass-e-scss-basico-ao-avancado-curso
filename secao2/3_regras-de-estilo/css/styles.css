@@ -69,6 +69,21 @@ a:hover {
   color: red;
 }
 
+.subtitle, .title {
+  border-bottom: 2px dotted red;
+  padding: 10px;
+  background-color: yellow;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.subtitle {
+  font-size: 25px;
+}
+
 .spacing {
   padding: 200px;
 }
