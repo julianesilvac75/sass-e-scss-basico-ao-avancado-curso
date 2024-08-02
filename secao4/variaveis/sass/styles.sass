@@ -1,0 +1,35 @@
+@import 'variables'
+
+h1
+  color: $text-color
+  border: $border
+
+p
+  color: $text-color
+  border: $border
+  font-size: $main-font
+  margin: #{$mx + 10}
+  padding: #{$px + $py}
+
+a
+  color: $text-color
+
+div
+
+  p
+    // escopo local
+    $font-color: #fff
+    $font-color2: red
+    // shadowing
+    $border: 3px dotted green
+    background-color: $bg-color
+    color: $font-color
+    border: $border
+
+    span
+      color: $font-color2
+      border: $border
+
+h2
+  color: $h2-color
+  border: $border
