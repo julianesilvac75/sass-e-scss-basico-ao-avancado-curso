@@ -13,3 +13,33 @@ body
 h2
   @include special
   @include green
+
+// .esp-menor
+//   padding: 10px
+//   margin: 10px
+
+// .esp-medio
+//   padding: 15px
+//   margin: 15px
+
+// .esp-maior
+//   padding: 20px
+//   margin: 20px
+
+.esp-menor
+  @include espacamento(10px, 10px)
+  border: 1px solid red 
+
+.esp-medio
+  @include espacamento(15px, 15px)
+  border: 1px solid blue 
+
+.esp-maior
+  @include espacamento(25px, 25px)
+  border: 1px solid green
+
+.esp-maior-ainda
+  $pad: 50px
+  $mag: 50px
+  @include espacamento($pad, $mag)
+  border: 1px solid gold
