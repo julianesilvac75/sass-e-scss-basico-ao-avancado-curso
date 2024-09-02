@@ -1,7 +1,7 @@
 @import 'variables'
 @import 'button'
 @import 'mixins'
-
+@import 'plugins'
 
 
 body
@@ -11,30 +11,21 @@ body
   @include special
 
 h2
-  @include special
+  @extend %special
   @include green
-
-// .esp-menor
-//   padding: 10px
-//   margin: 10px
-
-// .esp-medio
-//   padding: 15px
-//   margin: 15px
-
-// .esp-maior
-//   padding: 20px
-//   margin: 20px
 
 .esp-menor
   @include espacamento(10px, 10px)
   @include custom-border(solid, red)
   @include colors
+  @extend %font-pattern
 
 .esp-medio
   @include espacamento(15px, 15px)
   @include custom-border(dotted, blue, 4px)
   @include colors($background: #321)
+  @extend %font-pattern
+  
 
 .esp-maior
   @include espacamento(25px, 25px)
