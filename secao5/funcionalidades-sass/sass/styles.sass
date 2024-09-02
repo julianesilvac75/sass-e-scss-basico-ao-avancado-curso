@@ -2,7 +2,7 @@
 @import 'button'
 @import 'mixins'
 @import 'plugins'
-
+@import 'functions'
 
 body
   margin: 20px
@@ -48,3 +48,11 @@ $medida: 4
 .container-maior
   @include custom-border(solid, red)
   width: 25rem * ($medida + 2)
+
+.fonte-pequena
+  font-size: 5px
+  color: text-color(5)
+
+.fonte-grande
+  font-size: 25px
+  color: text-color(25)
