@@ -77,22 +77,24 @@ h2 {
 
 .container-menor {
   width: 400px;
-  border: 1px solid green;
+  border: 1px solid red;
 }
 
 .container-maior {
-  border: 1px solid red;
   width: 150rem;
+  border: 2px solid green;
 }
 
 .fonte-pequena {
   font-size: 5px;
   color: blue;
+  border: 3px dotted gold;
 }
 
 .fonte-grande {
   font-size: 25px;
   color: red;
+  border: 3px dotted gold;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -43,16 +43,18 @@ $medida: 4
 
 .container-menor
   width: 100px * $medida
-  @include custom-border(solid, green)
+  border: custom-border-function()
 
 .container-maior
-  @include custom-border(solid, red)
   width: 25rem * ($medida + 2)
+  border: custom-border-function(2)
 
 .fonte-pequena
   font-size: 5px
   color: text-color(5)
+  border: custom-border-function(3)
 
 .fonte-grande
   font-size: 25px
   color: text-color(25)
+  border: custom-border-function(4)
