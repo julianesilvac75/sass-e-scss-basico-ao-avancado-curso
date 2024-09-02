@@ -38,3 +38,13 @@ h2
   @include espacamento($pad, $mag)
   @include colors($font: gold)
   @include custom-border(double, gold, 3px)
+
+$medida: 4
+
+.container-menor
+  width: 100px * $medida
+  @include custom-border(solid, green)
+
+.container-maior
+  @include custom-border(solid, red)
+  width: 25rem * ($medida + 2)

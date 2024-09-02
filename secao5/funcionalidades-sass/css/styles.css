@@ -75,4 +75,14 @@ h2 {
   border: 3px double gold;
 }
 
+.container-menor {
+  width: 400px;
+  border: 1px solid green;
+}
+
+.container-maior {
+  border: 1px solid red;
+  width: 150rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
